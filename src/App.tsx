@@ -44,12 +44,12 @@ function App() {
     <div className='relative h-[150rem] md:h-[85rem]'>
       <div className='bg'></div>
       <div className='container pb-12'>
-        <div className='bg-black pb-12 p-5 max-w-[400px] md:max-w-[650px] right-0 absolute top-[8rem]   left-0  mb-8 rounded-[0.5rem] mx-auto'>
+        <div className='bg-black pb-12 p-5 max-w-[400px] md:max-w-[650px] lg:max-w-[1000px] right-0 absolute top-[8rem]   left-0  mb-8 rounded-[0.5rem] mx-auto'>
           <Header
             filterAvailable={filterAvailable}
             handleFilter={handleFilter}
           />
-          <div className='collection gap-4 grid md:grid-cols-2 mt-4'>
+          <div className='collection gap-4 grid md:grid-cols-2 lg:grid-cols-3 mt-4'>
             {filteredCollection?.map((c) => (
               <Card collection={c} />
             ))}
